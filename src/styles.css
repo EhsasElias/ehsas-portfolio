@@ -46,6 +46,7 @@ button { font: inherit; }
 .light { background: #fff; color: #111722; }
 
 .hero-card { border: 1px solid rgba(255,255,255,.09); background: rgba(14,20,31,.82); box-shadow: 0 40px 100px rgba(0,0,0,.35); border-radius: 24px; overflow: hidden; transform: rotate(1.8deg); }
+.hero-card::before { content: ''; display: block; height: 235px; background: linear-gradient(180deg, rgba(10,14,21,.03), rgba(10,14,21,.2)), url('/portfolio-preview.jpg') top center / cover no-repeat; border-bottom: 1px solid rgba(255,255,255,.07); }
 .terminal-head { height: 52px; display: flex; align-items: center; gap: 7px; padding: 0 18px; border-bottom: 1px solid rgba(255,255,255,.07); color: #7f8a9a; }
 .terminal-head span { width: 10px; height: 10px; border-radius: 50%; background: #49515d; }
 .terminal-head small { margin-left: auto; }
@@ -94,6 +95,7 @@ button { font: inherit; }
   .nav-links { display: none; }
   .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 80px; }
   .hero-card { max-width: 650px; transform: none; }
+  .hero-card::before { height: 290px; }
   .projects, .about { grid-template-columns: 1fr; }
   .service-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -103,6 +105,7 @@ button { font: inherit; }
   .hero { gap: 42px; padding-bottom: 60px; }
   .hero-copy h1 { font-size: 48px; }
   [dir='rtl'] .hero-copy h1 { font-size: 42px; }
+  .hero-card::before { height: 190px; }
   .stats { grid-template-columns: 1fr; }
   .stats article + article, [dir='rtl'] .stats article + article { border-left: 0; border-right: 0; border-top: 1px solid rgba(255,255,255,.08); padding-left: 0; padding-right: 0; }
   .section { padding: 88px 0; }
